@@ -1,0 +1,59 @@
+---
+import {
+  RiGithubFill,
+  RiGitlabFill,
+  RiLinkedinBoxFill,
+  RiMailFill,
+  RiTelegramFill,
+} from 'react-icons/ri'
+import type { IconType } from 'react-icons';
+
+interface Social {
+  link: string;
+  icon: IconType;
+}
+
+const socials: Social[] = [
+  {
+    link: 'https://github.com/andriyandriyan',
+    icon: RiGithubFill,
+  },
+  {
+    link: 'https://gitlab.com/andriyandriyan',
+    icon: RiGitlabFill,
+  },
+  {
+    link: 'https://linkedin.com/in/andriyandriyan',
+    icon: RiLinkedinBoxFill,
+  },
+  {
+    link: 'mailto:andriy.andriyan1@gmail.com',
+    icon: RiMailFill,
+  },
+  {
+    link: 'https://t.me/andriyandriyan',
+    icon: RiTelegramFill,
+  },
+];
+
+---
+
+<footer class="my-4">
+  <div class="flex justify-center items-center">
+    <ul class="grid grid-flow-col gap-4 mb-4">
+      {socials.map(social => (
+        <li>
+          <a href={social.link} rel="noopener noreferrer" target="_blank" class="text-primary-600">
+            <social.icon size={24} />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+  <p class="text-center">
+    {`© ${new Date().getFullYear()}. Made with ❤️ using `}
+    <a href="https://astro.build" class="text-primary-500" rel="noopener noreferrer" target="_blank">
+      Astro
+    </a>
+  </p>
+</footer>

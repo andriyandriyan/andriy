@@ -1,13 +1,81 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const about = `I'm a Full Stack Software Developer from Bekasi, Indonesia. I'm a highly skilled software development professional bringing more than 5 years in software design, development and integration. Offering advanced knowledge of PHP and TypeScript/Javascript programming languages. Writing code and developing systems for web and mobile applications.`;
+
+interface Experience {
+	role: string;
+	company: string;
+	from: string;
+	to: string;
+	responsibilities: string[];
+}
+
+const experiences: Experience[] = [
+	{
+		role: 'Frontend Developer',
+		company: 'PT. Printerous Global',
+		from: 'Jun 2021',
+		to: 'Present',
+		responsibilities: [
+			'Design and implement new features on the frontend for web applications using ReactJs and TypeScript',
+			'Enhance existing frontend features based on newrequirements',
+			'Develop UI components for web-applications',
+			'Consume REST APIs from backend',
+		],
+	},
+	{
+		role: 'Senior Full Stack Programmer',
+		company: 'PT. Novatama Solusi Teknologi',
+		from: 'Dec 2020',
+		to: 'Jun 2021',
+		responsibilities: [
+			'Designing and building web and mobile based applications based on project requirements using Laravel/Lumen, ReactJs, Angular, Ionic and React Native',
+			'Help other programmers to solve problems',
+		],
+	},
+	{
+		role: 'Full Stack Programmer',
+		company: 'PT. Novatama Solusi Teknologi',
+		from: 'Dec 2016',
+		to: 'Dec 2020',
+		responsibilities: [
+			'Designing and building web and mobile based applications based on project requirements using Laravel/Lumen, ReactJs, Angular, Ionic and React Native',
+		],
+	}
+];
+
 ---
 
 <Layout title="Andriyani - Full Stack Software Developer">
-	<main class="max-w-3xl mx-auto pt-10">
-		<p>Hi, my name is</p>
-		<h1 class="font-semibold text-6xl my-4">Andriyani</h1>
-		<p>
-			I'm a Full Stack Software Developer from Bekasi, Indonesia. I'm a highly skilled software development professional bringing more than 5 years in software design, development and integration. Offering advanced knowledge of PHP and TypeScript/Javascript programming languages. Writing code and developing systems for web and mobile applications.
-		</p>
+	<main class="pt-10">
+		<section class="mb-10">
+			<p>Hi, my name is</p>
+			<h1 class="font-bold text-6xl text-primary-500 my-4">
+				Andriyani
+			</h1>
+			<p>{about}</p>
+		</section>
+		<section class="flex">
+			<h2 class="w-52 font-semibold text-lg">EXPERIENCE</h2>
+			<div class="w-full">
+				{experiences.map(experience => (
+					<div class="mb-10 flex justify-between">
+						<div>
+							<h3 class="text-xl font-semibold text-primary-500">{experience.role}</h3>
+							<p>{experience.company}</p>
+							<ul class="list-disc ml-4">
+								{experience.responsibilities.map(responsibility => (
+									<li class="text-sm list-item">{responsibility}</li>
+								))}
+							</ul>
+						</div>
+						<p class="text-sm whitespace-nowrap text-gray-600">
+							{`${experience.from} - ${experience.to}`}
+						</p>
+					</div>
+				))}
+			</div>
+		</section>
 	</main>
 </Layout>
