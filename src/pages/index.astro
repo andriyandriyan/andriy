@@ -49,30 +49,43 @@ const experiences: Experience[] = [
 
 <Layout title="Andriyani - Full Stack Software Developer">
 	<main class="pt-10">
-		<section class="mb-10">
-			<p>Hi, my name is</p>
-			<h1 class="font-bold text-6xl text-primary-500 my-4">
-				Andriyani
-			</h1>
-			<p>{about}</p>
+		<section class="mb-10 flex justify-between items-center">
+			<div>
+				<p>Hi, my name is</p>
+				<h1 class="font-bold text-6xl text-primary-500 my-4">
+					Andriyani
+				</h1>
+				<p>{about}</p>
+			</div>
+			<div class="flex-shrink-0">
+				<img
+					src="/andriy.jpg"
+					alt="Image of the Author"
+					width={160}
+					height={160}
+					class="rounded-full overflow-hidden"
+					loading="eager"
+					decoding="async"
+				/>
+			</div>
 		</section>
-		<section class="flex">
+		<section class="flex flex-col lg:flex-row">
 			<h2 class="w-52 font-semibold text-lg">EXPERIENCE</h2>
 			<div class="w-full">
 				{experiences.map(experience => (
-					<div class="mb-10 flex justify-between">
-						<div>
+					<div class="mb-10">
+						<div class="flex justify-between items-center">
 							<h3 class="text-xl font-semibold text-primary-500">{experience.role}</h3>
-							<p>{experience.company}</p>
-							<ul class="list-disc ml-4">
-								{experience.responsibilities.map(responsibility => (
-									<li class="text-sm list-item">{responsibility}</li>
-								))}
-							</ul>
+							<p class="text-sm whitespace-nowrap text-gray-600">
+								{`${experience.from} - ${experience.to}`}
+							</p>
 						</div>
-						<p class="text-sm whitespace-nowrap text-gray-600">
-							{`${experience.from} - ${experience.to}`}
-						</p>
+						<p>{experience.company}</p>
+						<ul class="list-disc ml-4">
+							{experience.responsibilities.map(responsibility => (
+								<li class="text-sm list-item">{responsibility}</li>
+							))}
+						</ul>
 					</div>
 				))}
 			</div>

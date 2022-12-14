@@ -1,38 +1,41 @@
 ---
-import {
-  RiGithubFill,
-  RiGitlabFill,
-  RiLinkedinBoxFill,
-  RiMailFill,
-  RiTelegramFill,
-} from 'react-icons/ri'
-import type { IconType } from 'react-icons';
+import github from '../images/github.svg';
+import gitlab from '../images/gitlab.svg';
+import linkedin from '../images/linkedin.svg';
+import mail from '../images/mail.svg';
+import telegram from '../images/telegram.svg';
 
 interface Social {
+  title: string;
   link: string;
-  icon: IconType;
+  icon: string;
 }
 
 const socials: Social[] = [
   {
+    title: 'Github',
     link: 'https://github.com/andriyandriyan',
-    icon: RiGithubFill,
+    icon: github,
   },
   {
+    title: 'Gitlab',
     link: 'https://gitlab.com/andriyandriyan',
-    icon: RiGitlabFill,
+    icon: gitlab,
   },
   {
+    title: 'LinkedIn',
     link: 'https://linkedin.com/in/andriyandriyan',
-    icon: RiLinkedinBoxFill,
+    icon: linkedin,
   },
   {
+    title: 'Mail',
     link: 'mailto:andriy.andriyan1@gmail.com',
-    icon: RiMailFill,
+    icon: mail,
   },
   {
+    title: 'Telegram',
     link: 'https://t.me/andriyandriyan',
-    icon: RiTelegramFill,
+    icon: telegram,
   },
 ];
 
@@ -43,8 +46,8 @@ const socials: Social[] = [
     <ul class="grid grid-flow-col gap-4 mb-4">
       {socials.map(social => (
         <li>
-          <a href={social.link} rel="noopener noreferrer" target="_blank" class="text-primary-600">
-            <social.icon size={24} />
+          <a href={social.link} rel="noopener noreferrer" target="_blank">
+            <img src={social.icon} width={24} alt={social.title} />
           </a>
         </li>
       ))}
