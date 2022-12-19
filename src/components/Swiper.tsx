@@ -1,8 +1,12 @@
+import { CgSpinner } from '@react-icons/all-files/cg/CgSpinner';
+import { HiArrowCircleLeft } from '@react-icons/all-files/hi/HiArrowCircleLeft';
+import { HiArrowCircleRight } from '@react-icons/all-files/hi/HiArrowCircleRight';
 import clsx from 'clsx';
 import { FC, useState } from 'react';
-import { HiArrowCircleLeft, HiArrowCircleRight } from 'react-icons/hi';
+import { Lazy } from 'swiper';
 import { Swiper as SwiperReact, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/lazy';
 
 const PrevButton = () => {
   const swiper = useSwiper();
@@ -40,17 +44,13 @@ interface PaginationProps {
 const Pagination: FC<PaginationProps> = ({ count, activeIndex }) => {
   const swiper = useSwiper();
 
-  if (!count) {
-    return null;
-  }
-
   return (
-    <ul className="absolute left-1/2 bottom-2 flex items-center justify-center gap-2 z-10">
+    <ul className="absolute left-0 right-0 bottom-2 flex items-center justify-center gap-2 z-10">
       {Array.from(new Array(count).keys()).map(i => (
         <li key={i}>
           <button
             type="button"
-            onClick={() => swiper.slideTo(i)}
+            onClick={() => swiper.slideTo(i - 1)}
             className={clsx(
               'h-2 rounded-full transition-all',
               activeIndex === i ? 'bg-primary-500 w-6' : 'bg-primary-300 w-2'
@@ -71,19 +71,32 @@ const Swiper: FC<SwiperProps> = ({ images }) => {
 
   return (
     <SwiperReact
+      modules={[Lazy]}
       slidesPerView={1}
       loop
       className="group"
       onSlideChange={swiper => setActiveIndex(swiper.realIndex)}
+      lazy={{
+        enabled: true,
+        preloaderClass: 'preloader',
+      }}
+      preloadImages={false}
     >
-      <PrevButton />
       {images.map(image => (
         <SwiperSlide key={image}>
-          <img src={image} className="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px]" />
+          <img data-src={image} className="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] swiper-lazy" />
+          <div className="preloader absolute inset-0 flex items-center justify-center">
+            <CgSpinner className="text-primary-500 animate-spin" size={40} />
+          </div>
         </SwiperSlide>
       ))}
-      <NextButton />
-      <Pagination count={images.length} activeIndex={activeIndex} />
+      {images.length > 1 && (
+        <>
+          <PrevButton />
+          <NextButton />
+          <Pagination count={images.length} activeIndex={activeIndex} />
+        </>
+      )}
     </SwiperReact>
   );
 };
