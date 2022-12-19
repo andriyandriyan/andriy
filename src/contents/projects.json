@@ -1,0 +1,224 @@
+[
+  {
+    "title": "Sage Games",
+    "images": [
+      "/images/projects/sage-games/sage-games-1.png",
+      "/images/projects/sage-games/sage-games-2.png"
+    ],
+    "description": "Online shop mobile application that sells solely games in Australia",
+    "techs": [
+      {
+        "name": "React Native",
+        "icon": "logos:react"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "React Query",
+        "icon": "react-query"
+      },
+      {
+        "name": "Styled Components",
+        "icon": "vscode-icons:file-type-styled"
+      }
+    ]
+  },
+  {
+    "title": "JayaCM",
+    "images": [
+      "/images/projects/jayacm/jayacm.png"
+    ],
+    "description": "Construction company inspection and monitoring application",
+    "techs": [
+      {
+        "name": "React Native",
+        "icon": "logos:react"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "GraphQL",
+        "icon": "logos:graphql"
+      }
+    ]
+  },
+  {
+    "title": "CetakanKu",
+    "images": [
+      "/images/projects/cetakanku/cetakanku-1.png",
+      "/images/projects/cetakanku/cetakanku-2.png",
+      "/images/projects/cetakanku/cetakanku-3.png",
+      "/images/projects/cetakanku/cetakanku-4.png",
+      "/images/projects/cetakanku/cetakanku-5.png"
+    ],
+    "description": "Digital printing platform application that connects individuals, UMKM, large companies to the needs of the graphic printing industry, with printing agents.",
+    "techs": [
+      {
+        "name": "Ionic",
+        "icon": "logos:ionic-icon"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "Angular",
+        "icon": "logos:angular-icon"
+      },
+      {
+        "name": "GraphQL",
+        "icon": "logos:graphql"
+      },
+      {
+        "name": "Lumen",
+        "icon": "logos:lumen"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
+      }
+    ]
+  },
+  {
+    "title": "Freelance Kerja",
+    "images": [
+      "/images/projects/freelance-kerja/freelance-kerja-1.png",
+      "/images/projects/freelance-kerja/freelance-kerja-2.png",
+      "/images/projects/freelance-kerja/freelance-kerja-3.png",
+      "/images/projects/freelance-kerja/freelance-kerja-4.png",
+      "/images/projects/freelance-kerja/freelance-kerja-5.png"
+    ],
+    "description": "Crowdsourcing marketplace application that provides a platform for Freelancers to be found by Employers.",
+    "techs": [
+      {
+        "name": "Ionic",
+        "icon": "logos:ionic-icon"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "Angular",
+        "icon": "logos:angular-icon"
+      },
+      {
+        "name": "GraphQL",
+        "icon": "logos:graphql"
+      },
+      {
+        "name": "Lumen",
+        "icon": "logos:lumen"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
+      }
+    ]
+  },
+  {
+    "title": "Yakult Indonesia Persada",
+    "images": [
+      "/images/projects/yakult/yakult-1.png",
+      "/images/projects/yakult/yakult-2.png",
+      "/images/projects/yakult/yakult-3.png",
+      "/images/projects/yakult/yakult-4.png",
+      "/images/projects/yakult/yakult-5.png"
+    ],
+    "description": "Company profile and CMS for PT. Yakult Indonesia Persada includes employee recruitment and factory visits",
+    "techs": [
+      {
+        "name": "VueJs",
+        "icon": "logos:vue"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "logos:javascript"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "logos:bootstrap"
+      },
+      {
+        "name": "Lumen",
+        "icon": "logos:lumen"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
+      }
+    ]
+  },
+  {
+    "title": "JPI Domestik",
+    "images": [
+      "/images/projects/jpi-domestik/jpi-domestik-1.png",
+      "/images/projects/jpi-domestik/jpi-domestik-2.png",
+      "/images/projects/jpi-domestik/jpi-domestik-3.png",
+      "/images/projects/jpi-domestik/jpi-domestik-4.png"
+    ],
+    "description": "Logistics management web application includes transactions, invoices, payments and tracking",
+    "techs": [
+      {
+        "name": "ReactJs",
+        "icon": "logos:react"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "logos:javascript"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "logos:bootstrap"
+      },
+      {
+        "name": "Lumen",
+        "icon": "logos:lumen"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
+      }
+    ]
+  },
+  {
+    "title": "Dalops Dishub Tangerang Selatan",
+    "images": [
+      "/images/projects/dalops-dishub/dalops-dishub-1.png",
+      "/images/projects/dalops-dishub/dalops-dishub-2.png",
+      "/images/projects/dalops-dishub/dalops-dishub-3.png",
+      "/images/projects/dalops-dishub/dalops-dishub-4.png"
+    ],
+    "description": "The application for the presence of Dalops DISHUB Tangerang Selatan members uses selfie photos and geolocation",
+    "techs": [
+      {
+        "name": "React Native",
+        "icon": "logos:react"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "logos:javascript"
+      },
+      {
+        "name": "CodeIgniter",
+        "icon": "codeigniter"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "logos:bootstrap"
+      },
+      {
+        "name": "Firebase",
+        "icon": "logos:firebase"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
+      }
+    ]
+  }
+]
