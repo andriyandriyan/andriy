@@ -16,6 +16,7 @@ const PrevButton = () => {
       type="button"
       onClick={() => swiper.slidePrev()}
       className="opacity-0 group-hover:opacity-100 absolute z-10 transition-all left-2 top-1/2"
+      aria-label="Previous slide"
     >
       <HiArrowCircleLeft className="text-primary-500" size={24} />
     </button>
@@ -30,6 +31,7 @@ const NextButton = () => {
       type="button"
       onClick={() => swiper.slideNext()}
       className="opacity-0 group-hover:opacity-100 absolute z-10 transition-all right-2 top-1/2"
+      aria-label="Next slide"
     >
       <HiArrowCircleRight className="text-primary-500" size={24} />
     </button>
@@ -50,11 +52,13 @@ const Pagination: FC<PaginationProps> = ({ count, activeIndex }) => {
         <li key={i}>
           <button
             type="button"
-            onClick={() => swiper.slideTo(i - 1)}
+            onClick={() => swiper.slideTo(i + 1)}
             className={clsx(
               'h-2 rounded-full transition-all',
               activeIndex === i ? 'bg-primary-500 w-6' : 'bg-primary-300 w-2'
             )}
+            aria-label={`Go to slide ${i + 1}`}
+            aria-current={activeIndex === i ? 'true' : undefined}
           />
         </li>
       ))}
@@ -63,10 +67,11 @@ const Pagination: FC<PaginationProps> = ({ count, activeIndex }) => {
 }
 
 interface SwiperProps {
+  title: string;
   images: string[];
 }
 
-const Swiper: FC<SwiperProps> = ({ images }) => {
+const Swiper: FC<SwiperProps> = ({ title, images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -82,9 +87,13 @@ const Swiper: FC<SwiperProps> = ({ images }) => {
       }}
       preloadImages={false}
     >
-      {images.map(image => (
+      {images.map((image, i) => (
         <SwiperSlide key={image}>
-          <img data-src={image} className="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] swiper-lazy" />
+          <img
+            data-src={image}
+            className="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] swiper-lazy"
+            alt={`${title} ${i + 1}`}
+          />
           <div className="preloader absolute inset-0 flex items-center justify-center">
             <CgSpinner className="text-primary-500 animate-spin" size={40} />
           </div>

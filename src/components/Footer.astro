@@ -47,7 +47,7 @@ const socials: Social[] = [
       {socials.map(social => (
         <li>
           <a href={social.link} rel="noopener noreferrer" target="_blank">
-            <img src={social.icon} width={24} alt={social.title} />
+            <img src={social.icon} width={24} height={24} alt={`${social.title} Link`} />
           </a>
         </li>
       ))}

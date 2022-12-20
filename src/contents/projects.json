@@ -2,8 +2,8 @@
   {
     "title": "Sage Games",
     "images": [
-      "/images/projects/sage-games/sage-games-1.png",
-      "/images/projects/sage-games/sage-games-2.png"
+      "/images/projects/sage-games/sage-games-1.webp",
+      "/images/projects/sage-games/sage-games-2.webp"
     ],
     "description": "Online shop mobile application that sells solely games in Australia",
     "techs": [
@@ -28,7 +28,7 @@
   {
     "title": "JayaCM",
     "images": [
-      "/images/projects/jayacm/jayacm.png"
+      "/images/projects/jayacm/jayacm.webp"
     ],
     "description": "Construction company inspection and monitoring application",
     "techs": [
@@ -49,11 +49,11 @@
   {
     "title": "CetakanKu",
     "images": [
-      "/images/projects/cetakanku/cetakanku-1.png",
-      "/images/projects/cetakanku/cetakanku-2.png",
-      "/images/projects/cetakanku/cetakanku-3.png",
-      "/images/projects/cetakanku/cetakanku-4.png",
-      "/images/projects/cetakanku/cetakanku-5.png"
+      "/images/projects/cetakanku/cetakanku-1.webp",
+      "/images/projects/cetakanku/cetakanku-2.webp",
+      "/images/projects/cetakanku/cetakanku-3.webp",
+      "/images/projects/cetakanku/cetakanku-4.webp",
+      "/images/projects/cetakanku/cetakanku-5.webp"
     ],
     "description": "Digital printing platform application that connects individuals, UMKM, large companies to the needs of the graphic printing industry, with printing agents.",
     "techs": [
@@ -86,11 +86,11 @@
   {
     "title": "Freelance Kerja",
     "images": [
-      "/images/projects/freelance-kerja/freelance-kerja-1.png",
-      "/images/projects/freelance-kerja/freelance-kerja-2.png",
-      "/images/projects/freelance-kerja/freelance-kerja-3.png",
-      "/images/projects/freelance-kerja/freelance-kerja-4.png",
-      "/images/projects/freelance-kerja/freelance-kerja-5.png"
+      "/images/projects/freelance-kerja/freelance-kerja-1.webp",
+      "/images/projects/freelance-kerja/freelance-kerja-2.webp",
+      "/images/projects/freelance-kerja/freelance-kerja-3.webp",
+      "/images/projects/freelance-kerja/freelance-kerja-4.webp",
+      "/images/projects/freelance-kerja/freelance-kerja-5.webp"
     ],
     "description": "Crowdsourcing marketplace application that provides a platform for Freelancers to be found by Employers.",
     "techs": [
@@ -121,13 +121,65 @@
     ]
   },
   {
+    "title": "Data Pesanan",
+    "images": [
+      "/images/projects/data-pesanan/data-pesanan-1.webp",
+      "/images/projects/data-pesanan/data-pesanan-2.webp",
+      "/images/projects/data-pesanan/data-pesanan-3.webp",
+      "/images/projects/data-pesanan/data-pesanan-4.webp",
+      "/images/projects/data-pesanan/data-pesanan-5.webp",
+      "/images/projects/data-pesanan/data-pesanan-6.webp",
+      "/images/projects/data-pesanan/data-pesanan-7.webp",
+      "/images/projects/data-pesanan/data-pesanan-8.webp"
+    ],
+    "description": "Software as a service that provides instant creation of web and mobile online stores and is equipped with a web dashboard to manage orders",
+    "techs": [
+      {
+        "name": "Ionic",
+        "icon": "logos:ionic-icon"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "Angular",
+        "icon": "logos:angular-icon"
+      },
+      {
+        "name": "VueJs",
+        "icon": "logos:vue"
+      },
+      {
+        "name": "ReactJs",
+        "icon": "logos:react"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "logos:bootstrap"
+      },
+      {
+        "name": "CodeIgniter",
+        "icon": "codeigniter"
+      },
+      {
+        "name": "Lumen",
+        "icon": "logos:lumen"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
+      }
+    ]
+  },
+  {
     "title": "Yakult Indonesia Persada",
     "images": [
-      "/images/projects/yakult/yakult-1.png",
-      "/images/projects/yakult/yakult-2.png",
-      "/images/projects/yakult/yakult-3.png",
-      "/images/projects/yakult/yakult-4.png",
-      "/images/projects/yakult/yakult-5.png"
+      "/images/projects/yakult/yakult-1.webp",
+      "/images/projects/yakult/yakult-2.webp",
+      "/images/projects/yakult/yakult-3.webp",
+      "/images/projects/yakult/yakult-4.webp",
+      "/images/projects/yakult/yakult-5.webp"
     ],
     "description": "Company profile and CMS for PT. Yakult Indonesia Persada includes employee recruitment and factory visits",
     "techs": [
@@ -156,10 +208,10 @@
   {
     "title": "JPI Domestik",
     "images": [
-      "/images/projects/jpi-domestik/jpi-domestik-1.png",
-      "/images/projects/jpi-domestik/jpi-domestik-2.png",
-      "/images/projects/jpi-domestik/jpi-domestik-3.png",
-      "/images/projects/jpi-domestik/jpi-domestik-4.png"
+      "/images/projects/jpi-domestik/jpi-domestik-1.webp",
+      "/images/projects/jpi-domestik/jpi-domestik-2.webp",
+      "/images/projects/jpi-domestik/jpi-domestik-3.webp",
+      "/images/projects/jpi-domestik/jpi-domestik-4.webp"
     ],
     "description": "Logistics management web application includes transactions, invoices, payments and tracking",
     "techs": [
@@ -188,10 +240,10 @@
   {
     "title": "Dalops Dishub Tangerang Selatan",
     "images": [
-      "/images/projects/dalops-dishub/dalops-dishub-1.png",
-      "/images/projects/dalops-dishub/dalops-dishub-2.png",
-      "/images/projects/dalops-dishub/dalops-dishub-3.png",
-      "/images/projects/dalops-dishub/dalops-dishub-4.png"
+      "/images/projects/dalops-dishub/dalops-dishub-1.webp",
+      "/images/projects/dalops-dishub/dalops-dishub-2.webp",
+      "/images/projects/dalops-dishub/dalops-dishub-3.webp",
+      "/images/projects/dalops-dishub/dalops-dishub-4.webp"
     ],
     "description": "The application for the presence of Dalops DISHUB Tangerang Selatan members uses selfie photos and geolocation",
     "techs": [
