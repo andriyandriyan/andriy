@@ -12,14 +12,14 @@ import Layout from '../layouts/Layout.astro';
     <ul role="list" class="grid grid-cols-1 gap-6">
       {projects.map(project => (
         <li class="ring-zinc-900/5 shadow-zinc-800/5 shadow-lg ring-1 rounded-lg flex flex-col md:flex-row items-center sm:items-start overflow-hidden">
-          <div class="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px]">
-            <Swiper images={project.images} client:visible />
+          <div class="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] flex-shrink-0">
+            <Swiper title={`Project ${project.title}`} images={project.images} client:visible />
           </div>
           <div class="p-4 bg-gray-50 w-full h-full">
-            <h4 class="font-medium mb-2 text-lg">{project.title}</h4>
+            <h3 class="font-medium mb-2 text-lg">{project.title}</h3>
             <p class="text-gray-700 mb-4">{project.description}</p>
             <ul class="flex flex-wrap gap-2">
-              {project.techs.map((tech) => (
+              {project.techs.map(tech => (
                 <li class="flex items-center gap-4">
                   <span class="flex items-center justify-center shadow-lg shadow-zinc-800/5 rounded-full ring-1 ring-zinc-900/5 bg-zinc-100 py-1 px-2">
                     <Icon name={tech.icon} class="w-4 h-4 mr-1.5" />
