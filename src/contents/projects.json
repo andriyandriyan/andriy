@@ -121,6 +121,58 @@
     ]
   },
   {
+    "title": "Data Pesanan",
+    "images": [
+      "/images/projects/data-pesanan/data-pesanan-1.webp",
+      "/images/projects/data-pesanan/data-pesanan-2.webp",
+      "/images/projects/data-pesanan/data-pesanan-3.webp",
+      "/images/projects/data-pesanan/data-pesanan-4.webp",
+      "/images/projects/data-pesanan/data-pesanan-5.webp",
+      "/images/projects/data-pesanan/data-pesanan-6.webp",
+      "/images/projects/data-pesanan/data-pesanan-7.webp",
+      "/images/projects/data-pesanan/data-pesanan-8.webp"
+    ],
+    "description": "Software as a service that provides instant creation of web and mobile online stores and is equipped with a web dashboard to manage orders",
+    "techs": [
+      {
+        "name": "Ionic",
+        "icon": "logos:ionic-icon"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "Angular",
+        "icon": "logos:angular-icon"
+      },
+      {
+        "name": "VueJs",
+        "icon": "logos:vue"
+      },
+      {
+        "name": "ReactJs",
+        "icon": "logos:react"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "logos:bootstrap"
+      },
+      {
+        "name": "CodeIgniter",
+        "icon": "codeigniter"
+      },
+      {
+        "name": "Lumen",
+        "icon": "logos:lumen"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
+      }
+    ]
+  },
+  {
     "title": "Yakult Indonesia Persada",
     "images": [
       "/images/projects/yakult/yakult-1.webp",
