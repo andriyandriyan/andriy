@@ -1,11 +1,13 @@
 ---
+import { SEO } from 'astro-seo';
 import clsx from 'clsx';
 import Footer from '../components/Footer.astro';
 export interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 interface Nav {
 	title: string;
@@ -33,7 +35,24 @@ const pathname = new URL(Astro.request.url).pathname;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<SEO
+			title={title}
+			description={description}
+			openGraph={{
+				image: {
+					alt: `Andriyani's Logo`,
+				},
+				optional: {
+					description,
+				},
+				basic: {
+					title,
+					type: 'website',
+					image: '/favicon.svg',
+					url: Astro.url.href,
+				},
+			}}
+		/>
 	</head>
 	<body class="max-w-4xl mx-auto px-6">
 		<header class="flex justify-center py-8">
