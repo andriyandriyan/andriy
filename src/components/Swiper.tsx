@@ -94,7 +94,7 @@ const Swiper: FC<SwiperProps> = ({ title, images }) => {
             className="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] swiper-lazy"
             alt={`${title} ${i + 1}`}
           />
-          <div className="preloader absolute inset-0 flex items-center justify-center">
+          <div className="preloader absolute inset-0 flex items-center justify-center bg-white">
             <CgSpinner className="text-primary-500 animate-spin" size={40} />
           </div>
         </SwiperSlide>

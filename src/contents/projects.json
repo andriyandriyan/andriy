@@ -16,12 +16,50 @@
         "icon": "logos:typescript-icon"
       },
       {
-        "name": "React Query",
-        "icon": "react-query"
-      },
-      {
         "name": "Styled Components",
         "icon": "vscode-icons:file-type-styled"
+      },
+      {
+        "name": "React Query",
+        "icon": "react-query"
+      }
+    ]
+  },
+  {
+    "title": "MainanMks",
+    "images": [
+      "/images/projects/mainanmks/mainanmks-1.webp",
+      "/images/projects/mainanmks/mainanmks-2.webp",
+      "/images/projects/mainanmks/mainanmks-3.webp",
+      "/images/projects/mainanmks/mainanmks-4.webp",
+      "/images/projects/mainanmks/mainanmks-5.webp",
+      "/images/projects/mainanmks/mainanmks-6.webp"
+    ],
+    "description": "Web-based POS application that sells toys in the city of Makassar",
+    "techs": [
+      {
+        "name": "ReactJs",
+        "icon": "logos:react"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "Chakra UI",
+        "icon": "chakra-ui"
+      },
+      {
+        "name": "Vite",
+        "icon": "logos:vitejs"
+      },
+      {
+        "name": "Lumen",
+        "icon": "logos:lumen"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
       }
     ]
   },
