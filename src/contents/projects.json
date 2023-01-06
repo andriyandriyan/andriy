@@ -1,5 +1,47 @@
 [
   {
+    "title": "Beranda Muslim",
+    "images": [
+      "/images/projects/beranda-muslim/beranda-muslim-1.webp",
+      "/images/projects/beranda-muslim/beranda-muslim-2.webp"
+    ],
+    "description": "Website that contains a collection of Islamic articles that have been collected from several Islamic websites",
+    "techs": [
+      {
+        "name": "NextJs",
+        "icon": "logos:nextjs-icon"
+      },
+      {
+        "name": "ReactJs",
+        "icon": "logos:react"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "logos:tailwindcss-icon"
+      },
+      {
+        "name": "React Query",
+        "icon": "react-query"
+      },
+      {
+        "name": "AdonisJs",
+        "icon": "adonisjs"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "logos:postgresql"
+      },
+      {
+        "name": "Supabase",
+        "icon": "supabase"
+      }
+    ]
+  },
+  {
     "title": "Sage Games",
     "images": [
       "/images/projects/sage-games/sage-games-1.webp",
@@ -191,6 +233,10 @@
       {
         "name": "ReactJs",
         "icon": "logos:react"
+      },
+      {
+        "name": "Redux",
+        "icon": "logos:redux"
       },
       {
         "name": "Bootstrap",
