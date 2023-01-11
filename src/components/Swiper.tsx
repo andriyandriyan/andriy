@@ -1,10 +1,13 @@
 import { CgSpinner } from '@react-icons/all-files/cg/CgSpinner';
+import { MdFullscreen } from '@react-icons/all-files/md/MdFullscreen';
 import { HiArrowCircleLeft } from '@react-icons/all-files/hi/HiArrowCircleLeft';
 import { HiArrowCircleRight } from '@react-icons/all-files/hi/HiArrowCircleRight';
 import clsx from 'clsx';
 import { FC, useState } from 'react';
 import { Lazy } from 'swiper';
 import { Swiper as SwiperReact, SwiperSlide, useSwiper } from 'swiper/react';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 import 'swiper/css';
 import 'swiper/css/lazy';
 
@@ -73,6 +76,7 @@ interface SwiperProps {
 
 const Swiper: FC<SwiperProps> = ({ title, images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [open, setOpen] = useState(false);
 
   return (
     <SwiperReact
@@ -106,6 +110,19 @@ const Swiper: FC<SwiperProps> = ({ title, images }) => {
           <Pagination count={images.length} activeIndex={activeIndex} />
         </>
       )}
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="opacity-0 group-hover:opacity-100 absolute z-10 transition-all right-4 top-4"
+        aria-label="View Fullscreen"
+      >
+        <MdFullscreen className="text-primary-500" size={28} />
+      </button>
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={images.map((src, i) => ({ src, alt: `${title} ${i + 1}` }))}
+      />
     </SwiperReact>
   );
 };

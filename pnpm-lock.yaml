@@ -6,6 +6,7 @@ specifiers:
   '@react-icons/all-files': ^4.1.0
   '@types/react': ^18.0.21
   '@types/react-dom': ^18.0.6
+  '@types/react-gallery-carousel': ^0.2.2
   astro: ^1.7.0
   astro-icon: ^0.8.0
   clsx: ^1.2.1
@@ -14,6 +15,7 @@ specifiers:
   sharp: ^0.31.2
   swiper: ^8.4.5
   tailwindcss: ^3.0.24
+  yet-another-react-lightbox: ^2.2.6
 
 dependencies:
   '@astrojs/react': 1.2.2_yqqa5ithnjtlkxisuaub7c4kpa
@@ -29,6 +31,10 @@ dependencies:
   sharp: 0.31.2
   swiper: 8.4.5
   tailwindcss: 3.2.4
+  yet-another-react-lightbox: 2.2.6_biqbaboplfbrettd7655fr4n2y
+
+devDependencies:
+  '@types/react-gallery-carousel': 0.2.2
 
 packages:
 
@@ -635,7 +641,6 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
-    dev: false
 
   /@types/react-dom/18.0.9:
     resolution: {integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==}
@@ -643,13 +648,18 @@ packages:
       '@types/react': 18.0.26
     dev: false
 
+  /@types/react-gallery-carousel/0.2.2:
+    resolution: {integrity: sha512-BuFbJ4Ufip2Odgjvi/ESLTSpMpmmcf2eF/vTb3Qr2We2zROZLzx4/KZM7jLEg40cb7sUy+yszAuTIHBEuAz04g==}
+    dependencies:
+      '@types/react': 18.0.26
+    dev: true
+
   /@types/react/18.0.26:
     resolution: {integrity: sha512-hCR3PJQsAIXyxhTNSiDFY//LhnMZWpNNr5etoCqx/iUfGc5gXWtQR2Phl908jVR6uPXacojQWTg4qRpkxTuGug==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
       csstype: 3.1.1
-    dev: false
 
   /@types/resolve/1.20.2:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -657,7 +667,6 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
-    dev: false
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
@@ -1175,7 +1184,6 @@ packages:
 
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
-    dev: false
 
   /data-uri-to-buffer/4.0.0:
     resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==}
@@ -4083,6 +4091,17 @@ packages:
   /yargs-parser/21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
+    dev: false
+
+  /yet-another-react-lightbox/2.2.6_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-JMIODgufJH533l5/5nTiNdRVjH+pdMxn2WFseUHsongtPenSvhHtXhWwtrNldBDTMDLFvrAy4lSmL0EwUk4KYg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /yocto-queue/0.1.0:
