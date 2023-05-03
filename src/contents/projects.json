@@ -1,11 +1,12 @@
 [
   {
     "title": "Beranda Muslim",
+    "url": "https://berandamuslim.id/",
     "images": [
       "/images/projects/beranda-muslim/beranda-muslim-1.webp",
       "/images/projects/beranda-muslim/beranda-muslim-2.webp"
     ],
-    "description": "Website that contains a collection of Islamic articles that have been collected from several Islamic websites",
+    "description": "Website that contains a collection of Islamic articles and videos that have been collected from several Islamic websites and YouTube channels",
     "techs": [
       {
         "name": "NextJs",
@@ -43,6 +44,7 @@
   },
   {
     "title": "Sage Games",
+    "url": "https://apps.apple.com/us/app/sage-gaming/id6444887112",
     "images": [
       "/images/projects/sage-games/sage-games-1.webp",
       "/images/projects/sage-games/sage-games-2.webp"
@@ -128,6 +130,7 @@
   },
   {
     "title": "CetakanKu",
+    "url": "https://play.google.com/store/apps/details?id=id.cetakanku",
     "images": [
       "/images/projects/cetakanku/cetakanku-1.webp",
       "/images/projects/cetakanku/cetakanku-2.webp",
@@ -165,6 +168,7 @@
   },
   {
     "title": "Freelance Kerja",
+    "url": "https://play.google.com/store/apps/details?id=com.freelancekerja",
     "images": [
       "/images/projects/freelance-kerja/freelance-kerja-1.webp",
       "/images/projects/freelance-kerja/freelance-kerja-2.webp",
@@ -202,6 +206,7 @@
   },
   {
     "title": "Data Pesanan",
+    "url": "https://app.datapesanan.com/",
     "images": [
       "/images/projects/data-pesanan/data-pesanan-1.webp",
       "/images/projects/data-pesanan/data-pesanan-2.webp",
@@ -258,6 +263,7 @@
   },
   {
     "title": "Yakult Indonesia Persada",
+    "url": "https://yakult.co.id/",
     "images": [
       "/images/projects/yakult/yakult-1.webp",
       "/images/projects/yakult/yakult-2.webp",
@@ -291,6 +297,7 @@
   },
   {
     "title": "JPI Domestik",
+    "url": "https://domestik.jpicargo.com/",
     "images": [
       "/images/projects/jpi-domestik/jpi-domestik-1.webp",
       "/images/projects/jpi-domestik/jpi-domestik-2.webp",
@@ -323,6 +330,7 @@
   },
   {
     "title": "Dalops Dishub Tangerang Selatan",
+    "url": "https://play.google.com/store/apps/details?id=com.devghuraba.dalops",
     "images": [
       "/images/projects/dalops-dishub/dalops-dishub-1.webp",
       "/images/projects/dalops-dishub/dalops-dishub-2.webp",

@@ -1,5 +1,6 @@
 import { CgSpinner } from '@react-icons/all-files/cg/CgSpinner';
 import { MdFullscreen } from '@react-icons/all-files/md/MdFullscreen';
+import { MdLink } from '@react-icons/all-files/md/MdLink';
 import { HiArrowCircleLeft } from '@react-icons/all-files/hi/HiArrowCircleLeft';
 import { HiArrowCircleRight } from '@react-icons/all-files/hi/HiArrowCircleRight';
 import clsx from 'clsx';
@@ -70,11 +71,12 @@ const Pagination: FC<PaginationProps> = ({ count, activeIndex }) => {
 }
 
 interface SwiperProps {
+  url?: string;
   title: string;
   images: string[];
 }
 
-const Swiper: FC<SwiperProps> = ({ title, images }) => {
+const Swiper: FC<SwiperProps> = ({ url, title, images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [open, setOpen] = useState(false);
 
@@ -110,14 +112,24 @@ const Swiper: FC<SwiperProps> = ({ title, images }) => {
           <Pagination count={images.length} activeIndex={activeIndex} />
         </>
       )}
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="opacity-0 group-hover:opacity-100 absolute z-10 transition-all right-4 top-4"
-        aria-label="View Fullscreen"
-      >
-        <MdFullscreen className="text-primary-500" size={28} />
-      </button>
+      <div className="opacity-0 group-hover:opacity-100 absolute z-10 transition-all right-4 top-4 flex gap-2 py-1 px-3 bg-gray-50 rounded-full">
+        {url && (
+          <a
+            href={url}
+            target="_blank"
+            aria-label="Open URL"
+          >
+            <MdLink className="text-primary-500" size={28} />
+          </a>
+        )}
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          aria-label="View Fullscreen"
+        >
+          <MdFullscreen className="text-primary-500" size={28} />
+        </button>
+      </div>
       <Lightbox
         open={open}
         close={() => setOpen(false)}

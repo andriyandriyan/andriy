@@ -16,7 +16,12 @@ import Layout from '../layouts/Layout.astro';
       {projects.map(project => (
         <li class="ring-zinc-900/5 shadow-zinc-800/5 shadow-lg ring-1 rounded-lg flex flex-col md:flex-row items-center sm:items-start overflow-hidden">
           <div class="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] flex-shrink-0">
-            <Swiper title={`Project ${project.title}`} images={project.images} client:visible />
+            <Swiper
+              title={`Project ${project.title}`}
+              url={project.url}
+              images={project.images}
+              client:visible
+            />
           </div>
           <div class="p-4 bg-gray-50 w-full h-full">
             <h3 class="font-medium mb-2 text-lg">{project.title}</h3>
