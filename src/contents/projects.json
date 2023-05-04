@@ -1,5 +1,50 @@
 [
   {
+    "title": "Warsya",
+    "url": "https://play.google.com/store/apps/details?id=id.warsya.app",
+    "images": [
+      "/images/projects/warsya/warsya-1.webp",
+      "/images/projects/warsya/warsya-2.webp",
+      "/images/projects/warsya/warsya-3.webp",
+      "/images/projects/warsya/warsya-4.webp"
+    ],
+    "description": "Warsya is an android-based workshop business management application that provides various features to assist repair shop business owners in managing their business operations more efficiently",
+    "techs": [
+      {
+        "name": "React Native",
+        "icon": "logos:react"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "Styled Components",
+        "icon": "vscode-icons:file-type-styled"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logos:typescript-icon"
+      },
+      {
+        "name": "React Query",
+        "icon": "react-query"
+      },
+      {
+        "name": "AdonisJs",
+        "icon": "adonisjs"
+      },
+      {
+        "icon": "logos:mysql-icon",
+        "name": "MySQL"
+      },
+      {
+        "name": "Supabase",
+        "icon": "supabase"
+      }
+    ]
+  },
+  {
     "title": "Beranda Muslim",
     "url": "https://berandamuslim.id/",
     "images": [
